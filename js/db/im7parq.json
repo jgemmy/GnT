@@ -1,0 +1,37 @@
+[
+     {
+            "idp": "KOLONF/130",
+            "dim": "130x14",
+            "qual": "N",
+            "desc": "Rovere Multistrato Naturale Pre-Finito",
+            "prezzo": "41,00 €  "
+            
+    },{
+            "idp": "KOLOPRF/130",
+            "dim": "130x14",
+            "qual": "P",
+            "desc": "Rovere Multistrato Prima Scelta Pre-Finito",
+            "prezzo": " 46,00 € "
+    },{
+            "idp": "OLONF/130",
+            "dim": "130x15",
+            "qual": "N",
+            "desc": "Rovere Multistrato Naturale Pre-Finito",
+            "prezzo": "51,00 €"
+    },{
+            "idp": "OLOPRF/130",
+            "dim": "130x15",
+            "qual": "P",
+            "desc": "Rovere Multistrato Prima Scelta Pre-Finito",
+            "prezzo": "61,00 €"
+    },{
+            "idp": "OLNF/210",
+            "dim": "210x20",
+            "qual": "N",
+            "desc": "Rovere Da Finire Multistrato Naturale Pre-Finito",
+            "prezzo": "76,00 €"
+    }
+]
+
+
+

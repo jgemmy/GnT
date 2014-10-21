@@ -18,6 +18,7 @@
     <script type="text/javascript" src="webtoolkit.scrollabletable.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="webtoolkit.jscrollable.js"></script>
+    <script type="text/javascript" src="js/parq.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             jQuery('table').Scrollable(200, 800);
@@ -59,7 +60,7 @@
             background: white;
         }
         td, th {
-            border: 0.5px solid black;
+            border: 1px solid black;
             width: auto;
         }
     </style>
@@ -93,9 +94,9 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li class="sub-menu"><a href="persiane.html">Persiane</a>
                       <ul>
+                    <li><a href="persianaClasse2.html">Persiana Classe 2</a></li><hr>  
                     <li><a href="persianeclasse3.html">Persiana Classe 3</a></li><hr>  
                     <li><a href="persianeorientabili3.html">Persiana Orientabile Classe 3</a></li><hr>  
-                    <li><a href="persianaClasse2.html">Persiana Classe 2</a></li><hr>  
                     <li><a href="persiane.html">Tutte le persiane</a></li>
                   </ul>
                     </li>
@@ -165,7 +166,7 @@
             <li>  
             <h3>Descrizione</h3>     
             <div class="clear"></div>            
-              <p><img alt="" src="img/parquet/img1/img1.png">                         
+              <p><img id="imma" alt="" src="img/parquet/img1/img1.png">                         
             </li>                    
           </ul>
           </div>  
@@ -178,7 +179,7 @@
               <a href="#" onClick="document.getElementById('search').submit()" class="btn btn-1">Search</a> </div>
           </form>-->
           <br><br><br><br><br><br><br><br>
-          <table cellspacing="2">
+          <table id="records_table" cellspacing="2">
     <thead>
         <tr>
             <th>ID PRODOTTO</th>
@@ -188,100 +189,8 @@
             <th>PREZZO</th>
        </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td>ONLU/135</td>
-            <td>135x20</td>
-            <td>N</td>
-            <td>Rovere Da Finire Multistrato Naturale</td>
-            <td>50,00 € </td>
-        </tr>
-        <tr>
-            <td>ONLU/160</td>
-            <td>160x20</td>
-            <td>N</td>
-            <td>Rovere Da Finire Multistrato Naturale</td>
-            <td>55,00 € </td>
-        </tr>
-        <tr>
-            <td>OLN/NB/160</td>
-            <td>160x19</td>
-            <td>N</td>
-            <td>Rovere Da Finire Multistrato Naturale Senza Canalina</td>
-            <td>55,00 € </td>
-        </tr>
-        <tr>
-            <td>OLNU/180</td>
-            <td>180x20</td>
-            <td>N</td>
-            <td>Rovere Da Finire Multistrato Naturale</td>
-            <td>62,00 €</td>
-   
-        </tr>
-        <tr>
-            <td>OLN/NB/180</td>
-            <td>180x19</td>
-            <td>N</td>
-            <td>Rovere Da Finire Multistrato Naturale Senza Canalina</td>
-            <td>62,00 € </td>
-        </tr>
-        <tr>
-            <td>OLPRU/135</td>
-            <td>135x20</td>
-            <td>P</td>
-            <td>Rovere Da Finire Multistrato Prima Qualità </td>
-            <td>64,00 € </td>
-          </tr>
-        <tr>
-            <td>OLOPWF/210</td>
-            <td>210x15</td>
-            <td>P </td>
-            <td>Rovere Multistrato Overlay Bianco Pre-Finished</td>
-            <td>65,00 € </td>
-           
-        </tr>
-        <tr>
-            <td>OLM/NB/240</td>
-            <td>240x19 </td>
-            <td>Misto</td>
-            <td>Rovere Da Finire Multistrato Varie Gradazioni Senza Canalina</td>
-            <td>66,00 € </td>
-        
-        </tr>
-        <tr>
-            <td>OLNU/210</td>
-            <td>210x20</td>
-            <td>N</td>
-            <td>Rovere Da Finire Multistrato Naturale</td>
-            <td>68,00 € </td>
-           
-        </tr>
-        <tr>
-            <td>OLP/NB/180</td>
-            <td>180x19</td>
-            <td>P</td>
-            <td>Rovere Da Finire Multistrato Prima Scelta Sena Canalina</td>
-            <td>77,00 € </td>
-          
-        </tr>
-        <tr>
-            <td>OLN/NB/210</td>
-            <td>210x19</td>
-            <td>N</td>
-            <td>Rovere Da Finire Multistrato Naturale Senza Canalina</td>
-            <td>77,00 € </td>
-       </tr>
-        <tr>
-            <td>OLPRU/180</td>
-            <td>180x20</td>
-            <td>P</td>
-            <td>Rovere Da Finire Multistarto Prima Scelta</td>
-            <td>88,00 € </td>
-
-        </tr>
-    </tbody>
 </table>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><a href="im3parq.html" class="btn btn-1">>>></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><a class="btn btn-1" href="parquet.html" style="float: left;">Torna Ai Parquet</a><a href="im3parq.html" class="btn btn-1">>>></a>
         </article>
       </div>
      </div>
