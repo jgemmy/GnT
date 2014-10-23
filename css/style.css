@@ -63,6 +63,7 @@ a[href^="tel:"] {
 header {
   padding: 30px 150px 29px 0;
   z-index: 50;
+  overflow: visible;
   
 }
 .wra{
@@ -1325,7 +1326,7 @@ footer {
 }
 
 .boxer:hover{
-border: 2px solid blue; /* make this whatever you want */
+border: 2px solid white; /* make this whatever you want */
 cursor: pointer;
 }
 

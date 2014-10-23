@@ -718,6 +718,10 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .submenu ul{
+    display: none;
+  }
   .navbar-fixed-top,
   .navbar-fixed-bottom,
   .navbar-static-top {
@@ -880,6 +884,7 @@
   }
   .nav-collapse .nav > li {
     float: none;
+    display: none;
   }
   .nav-collapse .nav > li > a {
     margin-bottom: 2px;
@@ -899,6 +904,7 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+
   }
   .nav-collapse .btn {
     padding: 4px 10px 4px;
@@ -909,6 +915,7 @@
   }
   .nav-collapse .dropdown-menu li + li a {
     margin-bottom: 2px;
+
   }
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
@@ -939,6 +946,7 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+
   }
   .nav-collapse .dropdown-menu:before,
   .nav-collapse .dropdown-menu:after {
@@ -953,6 +961,7 @@
   }
   .nav-collapse .navbar-form,
   .nav-collapse .navbar-search {
+
     float: none;
     padding: 10px 15px;
     margin: 10px 0;
@@ -970,11 +979,14 @@
   .navbar .nav-collapse .nav.pull-right {
     float: none;
     margin-left: 0;
+
+
   }
   .nav-collapse,
   .nav-collapse.collapse {
     overflow: hidden;
     height: 0;
+
   }
   .navbar .btn-navbar {
     display: block;
@@ -988,5 +1000,6 @@
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
+
   }
 }
