@@ -65,8 +65,15 @@ header {
   z-index: 50;
   
 }
+.wra{
+
+    margin-left: auto;
+    margin-right: auto;
+    min-width:1300px !important;
+}
 /* navbar */
 .navbar_ {
+
   margin: 0;
   position: relative;
   float: right;
@@ -290,9 +297,14 @@ p {
   padding-bottom: 44px;
 
 }
-.block-slogan h2:first-letter {
+.block-slogan h2:first-letter{
   color: #e85356;
   font-weight: normal;
+}
+
+.prima h3:first-letter{
+  color: #e85356;
+  font-weight: bold;
 }
 .block-slogan h2 {
   float: left;
@@ -872,7 +884,18 @@ footer {
 }
 .list-social a:hover {
   background-position: 0 bottom;
+
 }
+
+.fotmenu{
+
+  color: black;
+}
+
+.fotmenu:hover {
+ color: #e85356; 
+}
+
 /*--- footer end ------*/
 @media (min-width: 1300px) {
   .box-404 {

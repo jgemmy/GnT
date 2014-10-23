@@ -116,6 +116,12 @@
     $("#chiudi12").on( "click", function(){
         $("#cont12").attr('style','display: none;');
     });
+    $("#desc13").on( "click", function(){
+        $("#cont13").show();
+    });
+    $("#chiudi13").on( "click", function(){
+        $("#cont13").attr('style','display: none;');
+    });
     $("#desc14").on( "click", function(){
         $("#cont14").show();
     });
@@ -248,7 +254,8 @@
     <div class="container">
           <div class="row">
         <article class="span12">
-              <h3>Parquet</h3>
+        <div class="prima">
+              <h3>Parquet</h3></div>  
             </article>
         <div class="clear"></div>
         <ul class="thumbnails thumbnails-1 list-services">
@@ -362,10 +369,13 @@
               </section>
                 </div>
           </li>
+          </ul>
+
+          <ul class="thumbnails thumbnails-1 list-services">
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img5.png" alt="">
                   <section> <a id="desc1" style="cursor: pointer;" class="link-1">Descrizione &#x2193&#x2193</a>
-                <div id="cont1" style="display:none;"><p>ID Prodotto: OLNO/135</p>
+                <div id="cont1" style="display:none; "><p>ID Prodotto: OLNO/135</p>
                 <p>Dimensione: 135x20</p>
                 <p>Qualità: N</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Naturale Oliato</p>
@@ -413,6 +423,8 @@
               </section>
                 </div>
           </li>
+          </ul>
+          <ul class="thumbnails thumbnails-1 list-services">
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img57.png" alt="">
                   <section> <a id="desc5" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
@@ -462,6 +474,8 @@
               </section>
                 </div>
           </li>
+          </ul>
+          <ul class="thumbnails thumbnails-1 list-services">
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img22.png" alt="">
                   <section> <a id="desc9" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
@@ -515,9 +529,11 @@
               </section>
                 </div>
           </li>
+          </ul>
+          <ul class="thumbnails thumbnails-1 list-services">
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img52.png" alt="">
-                  <section> <a id="desc13" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc13" class="link-1" style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
                 <div id="cont13" style="display:none;">
                 <p>ID Prodotto: OLS/180</p>
                 <p>Dimensione: 180x20</p>
@@ -567,7 +583,8 @@
 
               </section>
                 </div>
-          </li>
+          </li></ul>
+          <ul class="thumbnails thumbnails-1 list-services">
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img65.png" alt="">
                   <section> <a id="desc17" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
@@ -628,6 +645,11 @@
 
 <!--============================== footer =================================-->
 <footer>
+<div style="text-align: center; margin: 0px; padding: 0px; list-style-type:">
+  <p style="color: black;"><a class="fotmenu"  href="">Home</a> | <a class="fotmenu" href="">Persiane</a> | <a class="fotmenu" href="">Grate</a> | <a class="fotmenu" href="">Infissi</a> | <a class="fotmenu" href="">Case In Legno</a> | <a class="fotmenu" href="">Termocamini</a> | <a class="fotmenu" href="">Porte Da Interno</a> | <a class="fotmenu" href="">Cassonetti</a> | <a class="fotmenu" href="">Porte Blindate</a> | <a class="fotmenu" href="">Controtelai</a> | <a class="fotmenu"  href="">Parquet</a> </p>
+
+  </div><br><br>
+    </footer>
       <div class="container clearfix">
     <ul class="list-social pull-right">
           <li><a class="icon-1" href="#"></a></li>
@@ -638,7 +660,6 @@
         </ul>
     <!--<div class="privacy pull-left">Website Template designed by <a href="http://www.templatemonster.com/" target="_blank" rel="nofollow">TemplateMonster.com</a> </div> -->
   </div>
-    </footer>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
