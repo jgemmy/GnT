@@ -57,6 +57,13 @@
     $("#chiudi").on( "click", function(){
         $("#contenuto").attr('style','text-align: justify; display: none;');
     });
+
+    $("#apri1").on( "click", function(){
+        $("#contenuto1").show();
+    });
+    $("#chiudi1").on( "click", function(){
+        $("#contenuto1").attr('style','text-align: justify; display: none;');
+    });
 });
     </script>
   </head>
@@ -119,7 +126,14 @@
                   </ul>
                   </li>
 
-                <li><a href="porteinterno.html">Porte da Interno</a></li>
+                <li  class="sub-menu"><a href="porteinterno.html">Porte Da Interno</a>
+                <ul>
+                    <li><a href="portemassello.html">Porta in Massello</a></li><hr>
+                    <li><a href="portetechwood.html">Porta Techwood</a></li><hr>  
+                    <li><a href="portetelist.html">Porta Telist</a></li><hr>  
+                    <li><a href="portetrend.html">Porta Trend</a></li>
+                  </ul>
+                  </li>
                 <li><a href="cassonetti.html">Cassonetti</a></li>
                 <li><a href="porteblindate.html">Porte Blindate</a></li>
                 <li><a href="controtelai.html">Controtelai </a></li>
@@ -213,12 +227,25 @@
                 </div>
           </li>
               <li class="span3">
-            <div class="thumbnail thumbnail-1"> <img  src="img/page2-img3.jpg" alt="">
+                <div class="thumbnail thumbnail-1"> <img  src="img/persiane/certific.png" alt="">
+                  <section> <a  style="cursor: pointer;" id="apri1" class="link-1">Certificazioni &#x2193&#x2193</a>
+                <div id="contenuto1" style="text-align: justify; display: none;"><p  >
+                <ul style="margin: 0;" type="none">
+                  <li><p><a href="img/persiane/certif1.pdf"  class="btn btn-1">Prova Resistenza al carico del vento</a> </p></li>
+                  <li><p><a href="img/persiane/certif2.pdf" class="btn btn-1">Prova Resistenza Effrazione (Linea B “Classe 2”)</a> </p></li>
+                  <li><p><a href="img/persiane/certif3.pdf" class="btn btn-1">Prova Resistenza Effrazione (Linea T “Classe 3”)</a> </p></li>
+                  <li><p><a href="img/persiane/certif4.pdf" class="btn btn-1">Dall’Istituto Giordano Azione di nebbia salina (500 ore)</a> </p></li>
+                </ul><br><br>
+                <a id="chiudi1" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</a><br></p></div>
+              </section>
+                </div>
+          </li>
+            <!--<div class="thumbnail thumbnail-1"> <img  src="img/persiane/certific.png" alt="">
                   <section> <a href="#" class="link-1">Certificazioni </a>
                 
               </section>
                 </div>
-          </li>
+          </li>-->
 
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/persiane/combinato.png" alt="">

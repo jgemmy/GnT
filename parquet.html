@@ -44,7 +44,7 @@
     $( document ).ready(function() {
     console.log( "ready!" );
 
-    $("#desc1").on( "click", function(){
+    /*$("#desc1").on( "click", function(){
         $("#cont1").show();
     });
     $("#chiudi1").on( "click", function(){
@@ -163,9 +163,15 @@
     });
     $("#chiudi20").on( "click", function(){
         $("#cont20").attr('style','display: none;');
-    });
+    });*/
     
 });
+	
+	function togglejuve(anal){
+		x = anal.replace('desc', 'cont');
+		x = x.replace('chiudi', 'cont');
+		$("#"+x).fadeToggle(); 	
+	}
     </script>
   </head>
 
@@ -374,52 +380,52 @@
           <ul class="thumbnails thumbnails-1 list-services">
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img5.png" alt="">
-                  <section> <a id="desc1" style="cursor: pointer;" class="link-1">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc1" style="cursor: pointer;" onclick="togglejuve($(this).attr('id'));" class="link-1">Descrizione &#x2193&#x2193</a>
                 <div id="cont1" style="display:none; "><p>ID Prodotto: OLNO/135</p>
                 <p>Dimensione: 135x20</p>
                 <p>Qualità: N</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Naturale Oliato</p>
                 <p>Prezzo: 54,00 €
-                <a id="chiudi1" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</a></p></div> 
+                <a id="chiudi1" class="link-1" style=" float: right; cursor:pointer; " onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</a></p></div> 
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img34.png" alt="">
-                  <section> <a id="desc2" class="link-1" style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc2" class="link-1" style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont2" style="display:none;">
                 <p>ID Prodotto: OLOS/160</p>
                 <p>Dimensione: 15x160</p>
                 <p>Qualità: Argento Bianco</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Oliato</p>
                 <p>Prezzo: 58,00 € 
-                <a id="chiudi2" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi2" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img55.png" alt="">
-                  <section> <a id="desc3" class="link-1" style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc3" class="link-1" style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));" >Descrizione &#x2193&#x2193</a>
                 <div id="cont3" style="display:none;">
                 <p>ID Prodotto: OLOCGO/180</p>
                 <p>Dimensione: 180x15</p>
                 <p>Qualità: 5152 Costal Grigio</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Overlai Oliato</p>
                 <p>Prezzo: 58,00 €
-                <a id="chiudi3" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi3" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img56.png" alt="">
-                  <section> <a id="desc4" class="link-1" style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc4" class="link-1" style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont4" style="display:none;">
                 <p>ID Prodotto: OLODSF/180</p>
                 <p>Dimensione: 180x15</p>
                 <br>
                 <p>Descrizione Prodotto: Rovere Multistrato Overlay pre-finished afor 50 Cracks</p>
                 <p>Prezzo: 58,00 €
-                <a id="chiudi4" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi4" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
@@ -427,50 +433,50 @@
           <ul class="thumbnails thumbnails-1 list-services">
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img57.png" alt="">
-                  <section> <a id="desc5" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc5" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont5" style="display:none;">
                 <p>ID Prodotto: OLOLD/180</p>
                 <p>Dimensione: 180x15</p>
                 <p>Qualità: 5152 Old Bianco Cracks</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Oliato</p>
                 <p>Prezzo: 58,00 €
-                <a id="chiudi5" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi5" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img58.png" alt="">
-                  <section> <a id="desc6" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc6" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                   <div id="cont6" style="display:none;">
                   <p>ID Prodotto: OLOALF/180=PSSTNFGV 6811</p>
                   <p>Dimensione: 180x15</p>
                  <p>Descrizione Prodotto: Rovere Laminato Overlay Antichizzato Laccato</p>
                 <p>Prezzo: 58,00 €
-                <a id="chiudi6" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi6" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img59.png" alt="">
-                  <section> <a id="desc7" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc7" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                  <div id="cont7" style="display:none;">
                  <p>ID Prodotto: OLOCLF/180=PSSTNF 14/180</p>
                 <p>Dimensione: 180x15</p>
                 <p>Descrizione Prodotto: Rovere Laminato Overlay Clear Laccato Finish</p>
                 <p>Prezzo: 58,00 €
-                <a id="chiudi7" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi7" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
 
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img60.png" alt="">
-                  <section> <a id="desc8" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc8" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont8" style="display:none;"><p>ID Prodotto: OLOWLF/180=PSSTNFA11/180</p>
                 <p>Dimensione: 180x15</p>
                 <p>Descrizione Prodotto: Rovere Laminato Overlay Clear Laccato Finish</p>
                 <p>Prezzo: 58,00 €
-                <a id="chiudi8" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi8" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
@@ -478,46 +484,46 @@
           <ul class="thumbnails thumbnails-1 list-services">
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img22.png" alt="">
-                  <section> <a id="desc9" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc9" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                  <div id="cont9" style="display:none;">
                  <p>ID Prodotto: OLAW/400</p>
                 <p>Dimensione: 19X100X400</p>
                 <p>Qualità: Invecchiato</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Massello Non Oliato</p>
                 <p>Prezzo: 61,00 €
-                <a id="chiudi9" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi9" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img22.png" alt="">
-                  <section> <a id="desc10" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc10" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                  <div id="cont10" style="display:none;">
                  <p>ID Prodotto: OLAW/400</p>
                 <p>Dimensione: 19X100X400</p>
                 <p>Qualità: Invecchiato</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Massello Oliato</p>
                 <p>Prezzo: 62,00 €
-                <a id="chiudi10" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi10" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img71.png" alt="">
-                  <section> <a id="desc11"  class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc11"  class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont11" style="display:none;">
                 <p>ID Prodotto: OLOABO/210</p>
                 <p>Dimensione: 210x15</p>
                 <p>Qualità: 5152 Antichizzato Blue</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Overlay Oliato </p>
                 <p>Prezzo: 65,00 €
-                <a id="chiudi11" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi11" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img51.png" alt="">
-                  <section> <a id="desc12"  class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc12"  class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                  <div id="cont12" style="display:none;">
                  <p>ID Prodotto: OLWF/160</p>
                 <p>Dimensione: 180x20</p>
@@ -525,7 +531,7 @@
                 <br>
                 <p>Descrizione Prodotto: Rovere Multistrato Oliato</p>
                 <p>Prezzo: 72,00 €
-                <a id="chiudi12" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi12" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
@@ -533,53 +539,53 @@
           <ul class="thumbnails thumbnails-1 list-services">
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img52.png" alt="">
-                  <section> <a id="desc13" class="link-1" style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc13" class="link-1" style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont13" style="display:none;">
                 <p>ID Prodotto: OLS/180</p>
                 <p>Dimensione: 180x20</p>
                 <p>Qualità: Argento Bianco</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Oliato</p>
                 <p>Prezzo: 74,00 €
-                <a id="chiudi13" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi13" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img70.png" alt="">
-                  <section> <a id="desc14" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc14" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont14" style="display:none;">
                 <p>ID Prodotto: OLABO/210</p>
                 <p>Dimensione: 210x20</p>
                 <p>Qualità: 5152 Antichizzato Blue</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Oliato </p>
                 <p>Prezzo: 81,00 €
-                <a id="chiudi14" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi14" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img72.png" alt="">
-                  <section> <a id="desc15" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc15" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont15" style="display:none;">
                 <p>ID Prodotto: OLBU/210</p>
                 <p>Dimensione: 210x20</p>
                 <p>Qualità: Cotto Non Finito</p>
                 <p>Descrizione Prodotto: Rovere Da Finire Multistrato </p>
                 <p>Prezzo: 82,00 €
-                <a id="chiudi15" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi15" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img61.png" alt="">
-                  <section> <a id="desc16" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc16" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont16" style="display:none;">
                 <p>ID Prodotto: OLPRU/210</p>
                 <p>Dimensione: 210x20</p>
                 <p>Qualità: Prima Scelta</p>
                 <p>Descrizione Prodotto: Rovere Da Finire Multistrato </p>
                 <p>Prezzo: 86,00 €
-                <a id="chiudi16" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi16" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
 
               </section>
                 </div>
@@ -587,51 +593,51 @@
           <ul class="thumbnails thumbnails-1 list-services">
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img65.png" alt="">
-                  <section> <a id="desc17" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc17" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont17" style="display:none;"><p>ID Prodotto: OLCO/210</p>
                 <p>Dimensione: 210x20</p>
                 <p>Qualità: Oliato Cognac</p>
                 <p>Descrizione Prodotto: Rovere Da Finire Multistrato P&R </p>
                 <p>Prezzo: 86,00 €
-                <a id="chiudi17" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi17" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img69.png" alt="">
-                  <section> <a id="desc18" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc18" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont18" style="display:none;"><p>ID Prodotto: OLAO/210</p>
                 <p>Dimensione: 210x20</p>
                 <p>Qualità: 5152 Antichizzato</p>
                 <p>Descrizione Prodotto: Rovere Multistrato Oliato </p>
                 <p>Prezzo: 90,00 €
-                <a id="chiudi18" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi18" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img82.png" alt="">
-                  <section> <a id="desc19" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc19" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                 <div id="cont19" style="display:none;">
                 <p>ID Prodotto: OLBU/240</p>
                 <p>Dimensione: 240x20</p>
                 <p>Qualità: Cotto Non Finito</p>
                 <p>Descrizione Prodotto: Rovere Da Finire Multistrato </p>
                 <p>Prezzo: 103,00 €
-                <a id="chiudi19" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi19" class="link-1" style="float: right; cursor:pointer;" onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
           <li class="span3">
             <div class="thumbnail thumbnail-1"> <img  src="img/parquet/img38.png" alt="">
-                  <section> <a id="desc20" class="link-1"style="cursor:pointer;">Descrizione &#x2193&#x2193</a>
+                  <section> <a id="desc20" class="link-1"style="cursor:pointer;" onclick="togglejuve($(this).attr('id'));">Descrizione &#x2193&#x2193</a>
                  <div id="cont20" style="display:none;">
                  <p>ID Prodotto: OLBG/160</p>
                 <p>Dimensione: 160X20</p>
                 <br>
                 <p>Descrizione Prodotto: Rovere Multistrato Cotto Oliato Grigio e Bianco</p>
                 <p>Prezzo: 111,00 €
-                <a id="chiudi20" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</p></a></div>
+                <a id="chiudi20" class="link-1" style="float: right; cursor:pointer;"  onclick="togglejuve($(this).attr('id'));"> &#x2191&#x2191</p></a></div>
               </section>
                 </div>
           </li>
