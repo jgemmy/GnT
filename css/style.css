@@ -256,7 +256,7 @@ header h1 {
   margin: 0;
 }
 h2 {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 52px;
 }
 h3 {
@@ -264,6 +264,18 @@ h3 {
   line-height: 34px;
   margin: 32px 0 15px;
   font-weight: normal;
+
+
+
+}
+h6 {
+  font-size: 20px;
+  line-height: 34px;
+  margin: 0 15px 0;
+  font-weight: normal;
+  color: white;
+
+  
 
 }
 .content-extra h3 {
