@@ -1,0 +1,25 @@
+[
+     {
+            "idp": "OLS/135",
+            "dim": "135x20",
+            "qual": "Argento Bianco",
+            "desc": "Rovere Multistrato Oliato",
+            "prezzo": "60,00 €  "
+            
+    },{
+            "idp": "OLOSW/210",
+            "dim": "210x15",
+            "qual": "Oliato",
+            "desc": "Rovere Multistrato Pre-Oliato Grigio e Bianco",
+            "prezzo": " 65,00 € "
+    },{
+            "idp": "OSL/240",
+            "dim": "240x20",
+            "qual": "Argento Bianco",
+            "desc": "Rovere Multistrato Oliato",
+            "prezzo": "113,00 €"
+    }
+]
+
+
+

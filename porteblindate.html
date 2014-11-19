@@ -52,7 +52,7 @@
     console.log( "ready!" );
 
     $("#apri").on( "click", function(){
-        $("#contenuto").show();
+        $("#contenuto").fadeToggle();
     });
     $("#chiudi").on( "click", function(){
         $("#contenuto").attr('style','list-style-type: none; display: none;')
@@ -101,13 +101,7 @@
                   </ul>
                   </li>
 
-                   <li class="sub-menu"><a href="caselegno.html">Case in Legno</a>
-                      <ul>
-                    <li><a href="casefamiglia.html">Famiglie</a></li><hr>
-                    <li><a href="caselegnovac.html">Vancanze</a></li><hr>  
-                    <li><a href="legnoind.html">Struttura Industriale</a></li>  
-                    
-                  </ul>
+              
 
                   <li class="sub-menu"><a href="termocamini.html">Termo <br>Camini </a>
                       <ul>
@@ -246,7 +240,7 @@
              <a id="chiudi" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</a></p>  
 
 
-            </div>
+            </div></li>
       </div>
 
         </div>

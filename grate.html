@@ -52,18 +52,13 @@
     console.log( "ready!" );
 
     $("#apri").on( "click", function(){
-        $("#contenuto").show();
+        $("#contenuto").fadeToggle();  
     });
-    $("#chiudi").on( "click", function(){
-        $("#contenuto").attr('style','text-align: justify; display: none;');
-    });
-
+    
     $("#apri1").on( "click", function(){
-        $("#contenuto1").show();
+        $("#contenuto1").fadeToggle();   
     });
-    $("#chiudi1").on( "click", function(){
-        $("#contenuto1").attr('style','text-align: justify; display: none;');
-    });
+    
 });
     </script>
   </head>
@@ -99,23 +94,13 @@
                     </ul>
                     </li>
 
-                 <li class="sub-menu"><a href="infissi.html">Infissi</a>
+               <li  class="sub-menu"><a href="infissi.html">Infissi</a>
                       <ul>
-                    <li><a href="infissipvc.html">Infissi in PVC</a></li><hr>  
-                    <li><a href="infissilegno.html">Infissi in Legno</a></li><hr>  
-                    <li><a href="infissialluminio.html">Infissi in alluminio</a></li><hr>
-                    <li><a href="infissi.html">Tutti gli Infissi</a></li>
+                    <li><a href="infissi.html#omeca">Omeca</a></li><hr>  
+                    <li><a href="infissi.html#arcer">Arcer</a></li><hr>  
+                    <li><a href="infissi.html#rehau">Rehau</a></li>
                   </ul>
                   </li>
-
-                   <li class="sub-menu"><a href="caselegno.html">Case in Legno</a>
-                      <ul>
-                    <li><a href="casefamiglia.html">Famiglie</a></li><hr>
-                    <li><a href="caselegnovac.html">Vancanze</a></li><hr>  
-                    <li><a href="legnoind.html">Struttura Industriale</a></li>  
-                    
-                  </ul>
-
                   <li class="sub-menu"><a href="termocamini.html">Termo <br>Camini </a>
                       <ul>
                     <li><a href="termoelite.html">Elite</a></li><hr>
@@ -218,8 +203,8 @@
           </li>
           <li class="span3" style="margin-left: 15%;">
             <div class="thumbnail thumbnail-1"> <a style="cursor: pointer;" id="apri" class="link-1"><img src="img/persiane/sensori/sensori.jpg" alt=""></a>
-                  <section> <a style="cursor: pointer;" id="apri" class="link-1">Sensori Di Allarme &#x2193&#x2193</a>
-                <p id="contenuto" style="text-align: justify; display: none;">Per aumentare la sicurezza dei nostri prodotti, su richiesta del cliente, si esegue la predisposizione per alloggiare sensori di allarme o montaggio di sensori specifici che possono essere interfacciati con centraline di allarme via cavo o wireless.<br> <a id="chiudi" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</a></p>
+                  <section> <a style="cursor: pointer;" id="apri" class="link-1">Sensori Di Allarme </a>
+                <p id="contenuto" style="text-align: justify; display: none;">Per aumentare la sicurezza dei nostri prodotti, su richiesta del cliente, si esegue la predisposizione per alloggiare sensori di allarme o montaggio di sensori specifici che possono essere interfacciati con centraline di allarme via cavo o wireless.
               </section>
                 </div>
           </li>
@@ -232,15 +217,15 @@
           </li>
               <li class="span3">
                 <div class="thumbnail thumbnail-1"><a style="cursor: pointer;" id="apri1"><img  src="img/persiane/certific.png" alt=""></a>
-                  <section> <a  style="cursor: pointer;" id="apri1" class="link-1">Certificazioni &#x2193&#x2193</a>
+                  <section> <a  style="cursor: pointer;" id="apri1" class="link-1">Certificazioni </a>
                 <div id="contenuto1" style="text-align: justify; display: none;"><p  >
                 <ul style="margin: 0;" type="none">
                   <li><p><a href="img/persiane/certif1.pdf"  class="btn btn-1">Prova Resistenza al carico del vento</a> </p></li>
                   <li><p><a href="img/persiane/certif2.pdf" class="btn btn-1">Prova Resistenza Effrazione (Linea B “Classe 2”)</a> </p></li>
                   <li><p><a href="img/persiane/certif3.pdf" class="btn btn-1">Prova Resistenza Effrazione (Linea T “Classe 3”)</a> </p></li>
                   <li><p><a href="img/persiane/certif4.pdf" class="btn btn-1">Dall’Istituto Giordano Azione di nebbia salina (500 ore)</a> </p></li>
-                </ul><br><br>
-                <a id="chiudi1" class="link-1" style="float: right; cursor:pointer;"> &#x2191&#x2191</a><br></p></div>
+                </ul><br><br><br>
+                </div>
               </section>
                 </div>
           </li>

@@ -90,6 +90,29 @@
 });
     </script>
 
+    <script type="text/javascript">
+    $( document ).ready(function() {
+    console.log( "ready!" );
+     $("#cont").attr('style','display: none;');
+      $("#cont1").attr('style','display: none;');
+       $("#cont2").attr('style','display: none;');
+        $("#cont4").attr('style','display: none;');
+       
+    $("#prova1").on( "click", function(){
+        $("#colori").attr('style','float: left; margin-left: 0px;');
+        $("#cont").fadeToggle();   
+        $("#cont1").fadeToggle();
+        $("#cont2").fadeToggle();   
+    });
+     $("#eliteforno").on( "click", function(){
+        $("#cont3").fadeToggle();   
+        $("#cont4").fadeToggle();
+      
+    });
+    
+});
+    </script>
+
 
     
 	</head>
@@ -134,13 +157,7 @@
                   </ul>
                   </li>
 
-                   <li  class="sub-menu"><a href="caselegno.html">Case in Legno</a>
-                      <ul>
-                    <li><a href="casefamiglia.html">Famiglie</a></li><hr>
-                    <li><a href="caselegnovac.html">Vancanze</a></li><hr>  
-                    <li><a href="legnoind.html">Struttura Industriale</a></li>  
-                    
-                  </ul>
+                 
 
                   <li class="active" class="sub-menu"><a href="termocamini.html">Termo <br>Camini </a>
                       <ul>
@@ -188,11 +205,11 @@
               <div class="prima"><h3>Prestige Senza Forno</h3></div>
               
               <div class="wrapper">
-            <figure  class="img-indent"><img id="prova1" src="img/termocamini/prestige/presilver.png " alt="" /></figure>
+            <figure  class="img-indent"><img id="prova1" style="cursor: pointer;" src="img/termocamini/prestige/presilver.png " alt="" /></figure>
             
             <div class="img-indent">
               <br>
-              <table cellspacing="2">
+              <table cellspacing="2" id="cont" >
     <thead>
         <tr>
             <th>Modello</th>
@@ -225,16 +242,18 @@
 </table>  <br>
 
             </div>
-            <p style="float: left;"><div class="prima"><h3>Colori</h3></div><div class="boxer" id="grigio1" ><img src="img/termocamini/elite/grigio1.jpg " alt="" /></div>
+            <div id="colori" style="float: left; margin-left: -31px; "><div class="prima"><h3>Colori</h3></div>
+             <div class="boxer" id="grigio1" ><img src="img/termocamini/elite/grigio1.jpg " alt="" /></div>
              <div class="boxer"id="grigio2" ><img src="img/termocamini/elite/grigio2.jpg " alt="" /></div>
-             <div class="boxer"id="marrone" > <img src="img/termocamini/elite/marrone.jpg " alt="" /> </div></p>
+             <div class="boxer"id="marrone" > <img src="img/termocamini/elite/marrone.jpg " alt="" /> </div></div>
             </article>
 
         <article class="span7">
               <div class="prima"><h3>Dettagli Tecnici</h3></div>
               
 
-  <img style="float: left;" src="img/termocamini/prestige/prestigeschema.png " alt="" /><table class="tablegenda" cellspacing="1">
+  <img style="float: left;" src="img/termocamini/prestige/prestigeschema.png " alt="" />
+  <table class="tablegenda" cellspacing="1" id="cont1">
     <thead>
         <tr>
             <th>Leggenda:</th>    
@@ -288,7 +307,7 @@
     </tbody> 
 </table>
   </article><br><br><br>
-        <article class="span6">
+        <article class="span6" id="cont2" >
               <div class="prima"><h3>Componenti</h3></div>
               
             <ul class="list-photo">
@@ -313,11 +332,11 @@
               <div class="prima"><h3>Prestige Con Forno</h3></div>
               
               <div class="wrapper">
-            <figure class="img-indent"><img id="eliteforno" src="img/termocamini/prestige/prefornosilver.jpg " alt="" /></figure>
+            <figure class="img-indent"><img id="eliteforno" style="cursor: pointer;" src="img/termocamini/prestige/prefornosilver.jpg " alt="" /></figure>
             
             <div class="img-indent">
               <br>
-              <table cellspacing="2">
+              <table cellspacing="2" id="cont3" style="display: none;">
     <thead>
         <tr>
             <th>Modello</th>
@@ -350,15 +369,16 @@
 </table>  <br>
 
             </div>
-            <p style="float: left;"><div class="prima"><h3>Colori</h3></div><div class="boxer" id="grigio1-2" ><img src="img/termocamini/elite/grigio1.jpg " alt="" /></div>
+            <div style="float: left; margin-top: 15px;"><div class="prima"><h3>Colori</h3></div><div class="boxer" id="grigio1-2" ><img src="img/termocamini/elite/grigio1.jpg " alt="" /></div>
              <div class="boxer"id="grigio2-2" ><img src="img/termocamini/elite/grigio2.jpg " alt="" /></div>
-             <div class="boxer"id="marrone-2" > <img src="img/termocamini/elite/marrone.jpg " alt="" /> </div></p>
+             <div class="boxer"id="marrone-2" > <img src="img/termocamini/elite/marrone.jpg " alt="" /> </div></div>
             </article>
         <article class="span7">
               <div class="prima"><h3>Dettagli Tecnici</h3></div>
               
 
-  <img src="img/termocamini/prestige/prefornoschema.png " alt="" /><table class="tablegenda" cellspacing="1">
+  <img src="img/termocamini/prestige/prefornoschema.png " alt="" />
+  <table class="tablegenda" cellspacing="1" id="cont4" >
     <thead>
         <tr>
             <th>Leggenda:</th>    
@@ -450,6 +470,11 @@
 
 <!--============================== footer =================================-->
 <footer>
+<div style="text-align: center; margin: 0px; padding: 0px; list-style-type:">
+  <p style="color: black;"><a class="fotmenu"  href="index.html">Home</a> | <a class="fotmenu" href="persiane.html">Persiane</a> | <a class="fotmenu" href="grate.html">Grate</a> | <a class="fotmenu" href="infissi.html">Infissi</a> | <a class="fotmenu" href="caselegno.html">Case In Legno</a> | <a class="fotmenu" href="termocamini.html">Termocamini</a> | <a class="fotmenu" href="porteinterno.html">Porte Da Interno</a> | <a class="fotmenu" href="metalmeccanica.html">Metalmeccanica</a> | <a class="fotmenu" href="porteblindate.html">Porte Blindate</a> | <a class="fotmenu" href="controtelai.html">Controtelai</a> | <a class="fotmenu"  href="parquet.html">Parquet</a> </p>
+
+  </div><br><br>
+    </footer>
       <div class="container clearfix">
     <ul class="list-social pull-right">
           <li><a class="icon-1" href="#"></a></li>
@@ -458,9 +483,8 @@
           <li><a class="icon-4" href="#"></a></li>
           <li><a class="icon-5" href="#"></a></li>
         </ul>
-    <!--<div class="privacy pull-left">Privacy<a href="#" target="_blank" rel="nofollow">TemplateMonster.com</a> </div> -->
+    <!--<div class="privacy pull-left">Website Template designed by <a href="http://www.templatemonster.com/" target="_blank" rel="nofollow">TemplateMonster.com</a> </div> -->
   </div>
-    </footer>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>

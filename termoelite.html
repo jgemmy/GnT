@@ -90,6 +90,24 @@
 });
     </script>
 
+    <script type="text/javascript">
+    $( document ).ready(function() {
+    console.log( "ready!" );
+
+    $("#prova1").on( "click", function(){
+        $("#cont").fadeToggle();   
+        $("#cont1").fadeToggle();
+        $("#cont2").fadeToggle();   
+    });
+     $("#eliteforno").on( "click", function(){
+        $("#cont3").fadeToggle();   
+        $("#cont4").fadeToggle();
+        $("#cont5").fadeToggle();   
+    });
+    
+});
+    </script>
+
 
     
 	</head>
@@ -127,20 +145,13 @@
 
                  <li class="sub-menu"><a href="infissi.html">Infissi</a>
                       <ul>
-                    <li><a href="infissipvc.html">Infissi in PVC</a></li><hr>  
-                    <li><a href="infissilegno.html">Infissi in Legno</a></li><hr>  
-                    <li><a href="infissialluminio.html">Infissi in alluminio</a></li><hr>
-                    <li><a href="infissi.html">Tutti gli Infissi</a></li>
+                    <li><a href="infissi.html#omeca">Omeca</a></li><hr>  
+                    <li><a href="infissi.html#arcer">Arcer</a></li><hr>  
+                    <li><a href="infissi.html#rehau">Rehau</a></li>
                   </ul>
                   </li>
 
-                   <li  class="sub-menu"><a href="caselegno.html">Case in Legno</a>
-                      <ul>
-                    <li><a href="casefamiglia.html">Famiglie</a></li><hr>
-                    <li><a href="caselegnovac.html">Vancanze</a></li><hr>  
-                    <li><a href="legnoind.html">Struttura Industriale</a></li>  
-                    
-                  </ul>
+                  
 
                   <li class="active" class="sub-menu"><a href="termocamini.html">Termo <br>Camini </a>
                       <ul>
@@ -160,7 +171,6 @@
                     <li><a href="portetrend.html">Trend</a></li>
                   </ul>
                   </li>
-                <li><a href="cassonetti.html">Cassonetti</a></li>
                 <li><a href="porteblindate.html">Porte Blindate</a></li>
                 <li><a href="controtelai.html">Controtelai </a></li>
                 <li><a href="parquet.html">Parquet </a></li>
@@ -185,15 +195,15 @@
      
     <div class="container">
           <div class="row">
-        <article class="span5">
+        <article class="span5" >
               <div class="prima"><h3>Elite Senza Forno</h3></div>
               
               <div class="wrapper">
-            <figure  class="img-indent"><img id="prova1" src="img/termocamini/elite/elite.jpg " alt="" /></figure>
+            <figure  class="img-indent"><img id="prova1" style="cursor: pointer;" src="img/termocamini/elite/elite.jpg " alt="" /></figure>
             
             <div class="img-indent">
               <br>
-              <table cellspacing="2">
+              <table cellspacing="2" id="cont1" style="display: none;">
     <thead>
         <tr>
             <th>Modello</th>
@@ -231,11 +241,14 @@
              <div class="boxer"id="marrone" > <img src="img/termocamini/elite/marrone.jpg " alt="" /> </div></p>
             </article>
 
-        <article class="span7">
+        <article class="span7" >
               <div class="prima"><h3>Dettagli Tecnici</h3></div>
               
 
-  <img style="float: left;" src="img/termocamini/elite/eliteschema.jpg " alt="" /><table class="tablegenda" cellspacing="1">
+  <img style="float: left;" src="img/termocamini/elite/eliteschema.jpg " alt="" />
+
+
+  <table class="tablegenda" cellspacing="1" id="cont2" style="display: none;">
     <thead>
         <tr>
             <th>Leggenda:</th>    
@@ -286,7 +299,7 @@
     </tbody> 
 </table>
   </article><br><br><br>
-        <article class="span6">
+        <article class="span6" id="cont" id="cont5" style="display: none;">
               <div class="prima"><h3>Componenti</h3></div>
               <ul class="list-photo">
             <li><a href="img/termocamini/elite/270x180/sportello.png" class="magnifier" ><img src="img/termocamini/elite/180x87/sportello.png " alt="" /></a></li>
@@ -311,11 +324,11 @@
               <div class="prima"><h3>Elite Con Forno</h3></div>
               
               <div class="wrapper">
-            <figure class="img-indent"><img id="eliteforno" src="img/termocamini/eliteconforno/elite.jpg " alt="" /></figure>
+            <figure class="img-indent"><img id="eliteforno" style="cursor: pointer;" src="img/termocamini/eliteconforno/elite.jpg " alt="" /></figure>
             
             <div class="img-indent">
               <br>
-              <table cellspacing="2">
+              <table cellspacing="2" id="cont4" style="display: none;">
     <thead>
         <tr>
             <th>Modello</th>
@@ -352,11 +365,12 @@
              <div class="boxer"id="grigio2-2" ><img src="img/termocamini/elite/grigio2.jpg " alt="" /></div>
              <div class="boxer"id="marrone-2" > <img src="img/termocamini/elite/marrone.jpg " alt="" /> </div></p>
             </article>
-        <article class="span7">
+        <article class="span7" >
               <div class="prima"><h3>Dettagli Tecnici</h3></div>
               
 
-  <img src="img/termocamini/elite/eliteschema.jpg " alt="" /><table class="tablegenda" cellspacing="1">
+  <img src="img/termocamini/elite/eliteschema.jpg " alt="" />
+  <table class="tablegenda" cellspacing="1" id="cont3" style="display: none;">
     <thead>
         <tr>
             <th>Leggenda:</th>    

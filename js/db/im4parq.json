@@ -1,0 +1,25 @@
+[
+     {
+            "idp": "OLPRO/135",
+            "dim": "135x20",
+            "qual": "P",
+            "desc": "Rovere Multistrato Prima Scelta Oliato",
+            "prezzo": "68,00 € "
+            
+    },{
+            "idp": "OLNO/180",
+            "dim": "180x20",
+            "qual": "N",
+            "desc": "Rovere Multistrato Naturale Oliato",
+            "prezzo": " 70,00 € "
+    },{
+            "idp": "OLPRO/180",
+            "dim": "180x20",
+            "qual": "P",
+            "desc": "Rovere Multistrato Prima Scelta Oliato",
+            "prezzo": "85,00 €"
+    }
+]
+
+
+

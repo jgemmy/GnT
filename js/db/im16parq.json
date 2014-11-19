@@ -1,0 +1,37 @@
+[
+     {
+            "idp": "OLRW/280",
+            "dim": "19x70x280",
+            "qual": "N",
+            "desc": "Rovere Naturale Da Finire Multistrato Massello",
+            "prezzo": "39,00 €  "
+            
+    },{
+            "idp": "OLPW/400",
+            "dim": "19x70x400",
+            "qual": "P",
+            "desc": "Rovere Da Finire Multistrato Prima Scelta Massello",
+            "prezzo": " 56,00 € "
+    },{
+            "idp": "OLPW/400",
+            "dim": "19x100x400",
+            "qual": "P",
+            "desc": "Rovere Da Finire Multistrato Prima Scelta Massello",
+            "prezzo": "59,00 €"
+    },{
+            "idp": "OLP/NB/160",
+            "dim": "160x90",
+            "qual": "P",
+            "desc": "Rovere Da Finire Multistrato Prima Scelta Senza Canalina",
+            "prezzo": "71,00 €"
+    },{
+            "idp": "OLP/NB/210",
+            "dim": "210x19",
+            "qual": "P",
+            "desc": "Rovere Da Finire Multistrato Prima Scelta Senza Canalina",
+            "prezzo": "77,00 €"
+    }
+]
+
+
+

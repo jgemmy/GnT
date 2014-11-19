@@ -81,6 +81,24 @@
 });
     </script>
 
+    <script type="text/javascript">
+    $( document ).ready(function() {
+    console.log( "ready!" );
+
+    $("#prova1").on( "click", function(){
+        $("#cont").fadeToggle();   
+        $("#cont1").fadeToggle();
+        $("#cont2").fadeToggle();   
+    });
+     $("#eliteforno").on( "click", function(){
+        $("#cont3").fadeToggle();   
+        $("#cont4").fadeToggle();
+        
+    });
+    
+});
+    </script>
+
 
     
 	</head>
@@ -125,13 +143,7 @@
                   </ul>
                   </li>
 
-                   <li  class="sub-menu"><a href="caselegno.html">Case in Legno</a>
-                      <ul>
-                    <li><a href="casefamiglia.html">Famiglie</a></li><hr>
-                    <li><a href="caselegnovac.html">Vancanze</a></li><hr>  
-                    <li><a href="legnoind.html">Struttura Industriale</a></li>  
-                    
-                  </ul>
+                
 
                   <li class="active" class="sub-menu"><a href="termocamini.html">Termo <br>Camini </a>
                       <ul>
@@ -180,11 +192,11 @@
               <div class="prima"><h3>Regal</h3></div>
               
               <div class="wrapper">
-            <figure  class="img-indent"><img id="prova1" src="img/termocamini/regal/regal.jpg " alt="" /></figure>
+            <figure  class="img-indent"><img id="prova1" style="cursor: pointer;" src="img/termocamini/regal/regal.jpg " alt="" /></figure>
             
             <div class="img-indent">
               <br>
-              <table cellspacing="2">
+              <table cellspacing="2" id="cont" style="display: none;">
     <thead>
         <tr>
             <th>Modello</th>
@@ -226,7 +238,8 @@
               <div class="prima"><h3>Dettagli Tecnici</h3></div>
               
 
-  <img style="float: left;" src="img/termocamini/regal/regalschema.jpg " alt="" /><table class="tablegenda" cellspacing="1">
+  <img style="float: left;" src="img/termocamini/regal/regalschema.jpg " alt="" />
+  <table class="tablegenda" cellspacing="1" id="cont1" style="display: none;">
     <thead>
         <tr>
             <th>Leggenda:</th>    
@@ -283,7 +296,8 @@
     </tbody> 
 </table>
   </article><br><br><br>
-        <article class="span6">
+
+        <article class="span6" id="cont2" style="display: none;">
               <div class="prima"><h3>Componenti</h3></div>
               <ul class="list-photo">
             <li><a href="img/termocamini/regal/270x80/sportelloispezionabile.png" class="magnifier" ><img src="img/termocamini/regal/120x87/sportelloispezionabile.png " alt="" /></a></li>
@@ -294,7 +308,8 @@
             <li><a href="img/termocamini/elite/270x180/supporti.png" class="magnifier" ><img src="img/termocamini/elite/180x87/supporti.png " alt="" /></a></li>
             <li><a href="img/termocamini/elite/270x180/tiraggio.png" class="magnifier" ><img src="img/termocamini/elite/180x87/tiraggio.png " alt="" /></a></li>
             <li class="last"><a href="img/termocamini/elite/270x180/vernice.png" class="magnifier" ><img src="img/termocamini/elite/180x87/vernice.png " alt="" /></a></li>
-            </article>
+            </ul>
+            
 
             
                       
@@ -308,11 +323,11 @@
               <div class="prima"><h3>Regal Con Forno</h3></div>
               
               <div class="wrapper">
-            <figure class="img-indent"><img id="eliteforno" src="img/termocamini/regal/regalforno.jpg " alt="" /></figure>
+            <figure class="img-indent"><img id="eliteforno" style="cursor: pointer;" src="img/termocamini/regal/regalforno.jpg " alt="" /></figure>
             
             <div class="img-indent">
               <br>
-              <table cellspacing="2">
+              <table cellspacing="2" id="cont3" style="display: none;">
     <thead>
         <tr>
             <th>Modello</th>
@@ -345,15 +360,16 @@
 </table>  <br>
 
             </div>
-            <p style="float: left;"><div class="prima"><h3>Colori</h3></div><div class="boxer" id="grigio1-2" ><img src="img/termocamini/elite/grigio1.jpg " alt="" /></div>
+            <div style="float: left;"><div class="prima"><h3>Colori</h3></div><div class="boxer" id="grigio1-2" ><img src="img/termocamini/elite/grigio1.jpg " alt="" /></div>
              <div class="boxer"id="grigio2-2" ><img src="img/termocamini/elite/grigio2.jpg " alt="" /></div>
-             <div class="boxer"id="marrone-2" > <img src="img/termocamini/elite/marrone.jpg " alt="" /> </div></p>
+             <div class="boxer"id="marrone-2" > <img src="img/termocamini/elite/marrone.jpg " alt="" /> </div></div>
             </article>
         <article class="span7">
               <div class="prima"><h3>Dettagli Tecnici</h3></div>
               
 
-  <img src="img/termocamini/regal/regalfornoschema.jpg " alt="" /><table class="tablegenda" cellspacing="1">
+  <img src="img/termocamini/regal/regalfornoschema.jpg " alt="" />
+  <table class="tablegenda" cellspacing="1" id="cont4" style="display: none;">
     <thead>
         <tr>
             <th>Leggenda:</th>    

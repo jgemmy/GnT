@@ -1,0 +1,31 @@
+[
+     {
+            "idp": "OLBW/280",
+            "dim": "19x70x280",
+            "qual": "Cotto",
+            "desc": "Rovere Da Finire Multistrato Massello",
+            "prezzo": "59,00 €  "
+            
+    },{
+            "idp": "OLBW/400",
+            "dim": "19x70x400",
+            "qual": "Cotto",
+            "desc": "Rovere Da Finire Multistrato Massello",
+            "prezzo": " 66,00 € "
+    },{
+            "idp": "OLBU/135",
+            "dim": "135x20",
+            "qual": "Cotto",
+            "desc": "Rovere Da Finire Multistrato",
+            "prezzo": "69,00 €"
+    },{
+            "idp": "OLBU/180",
+            "dim": "180x20",
+            "qual": "Cotto",
+            "desc": "Rovere Da Finire Multistrato P&R",
+            "prezzo": "77,00 €"
+    }
+]
+
+
+
